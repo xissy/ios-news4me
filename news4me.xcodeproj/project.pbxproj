@@ -14,14 +14,16 @@
 		A9743445185D79AD0083D8C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9743444185D79AD0083D8C4 /* main.m */; };
 		A9743449185D79AD0083D8C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9743448185D79AD0083D8C4 /* AppDelegate.m */; };
 		A974344C185D79AD0083D8C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A974344A185D79AD0083D8C4 /* Main.storyboard */; };
-		A974344F185D79AD0083D8C4 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A974344E185D79AD0083D8C4 /* FirstViewController.m */; };
-		A9743452185D79AD0083D8C4 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9743451185D79AD0083D8C4 /* SecondViewController.m */; };
+		A974344F185D79AD0083D8C4 /* RecommendedNewsUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A974344E185D79AD0083D8C4 /* RecommendedNewsUIViewController.m */; };
+		A9743452185D79AD0083D8C4 /* ReadNewsUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9743451185D79AD0083D8C4 /* ReadNewsUIViewController.m */; };
 		A9743454185D79AD0083D8C4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9743453185D79AD0083D8C4 /* Images.xcassets */; };
 		A974345B185D79AD0083D8C4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A974345A185D79AD0083D8C4 /* XCTest.framework */; };
 		A974345C185D79AD0083D8C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9743438185D79AD0083D8C4 /* Foundation.framework */; };
 		A974345D185D79AD0083D8C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A974343C185D79AD0083D8C4 /* UIKit.framework */; };
 		A9743465185D79AD0083D8C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9743463185D79AD0083D8C4 /* InfoPlist.strings */; };
 		A9743467185D79AD0083D8C4 /* news4meTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9743466185D79AD0083D8C4 /* news4meTests.m */; };
+		A9743474185D8E080083D8C4 /* LandingUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9743473185D8E080083D8C4 /* LandingUIViewController.m */; };
+		A9C6AB2E185E5A19000981BF /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C6AB2D185E5A19000981BF /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,16 +48,19 @@
 		A9743447185D79AD0083D8C4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A9743448185D79AD0083D8C4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A974344B185D79AD0083D8C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A974344D185D79AD0083D8C4 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		A974344E185D79AD0083D8C4 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		A9743450185D79AD0083D8C4 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		A9743451185D79AD0083D8C4 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		A974344D185D79AD0083D8C4 /* RecommendedNewsUIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecommendedNewsUIViewController.h; sourceTree = "<group>"; };
+		A974344E185D79AD0083D8C4 /* RecommendedNewsUIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecommendedNewsUIViewController.m; sourceTree = "<group>"; };
+		A9743450185D79AD0083D8C4 /* ReadNewsUIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadNewsUIViewController.h; sourceTree = "<group>"; };
+		A9743451185D79AD0083D8C4 /* ReadNewsUIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReadNewsUIViewController.m; sourceTree = "<group>"; };
 		A9743453185D79AD0083D8C4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A9743459185D79AD0083D8C4 /* news4meTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = news4meTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A974345A185D79AD0083D8C4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		A9743462185D79AD0083D8C4 /* news4meTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "news4meTests-Info.plist"; sourceTree = "<group>"; };
 		A9743464185D79AD0083D8C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A9743466185D79AD0083D8C4 /* news4meTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = news4meTests.m; sourceTree = "<group>"; };
+		A9743472185D8E080083D8C4 /* LandingUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandingUIViewController.h; sourceTree = "<group>"; };
+		A9743473185D8E080083D8C4 /* LandingUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandingUIViewController.m; sourceTree = "<group>"; };
+		A9C6AB2D185E5A19000981BF /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +69,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A974343B185D79AD0083D8C4 /* CoreGraphics.framework in Frameworks */,
+				A9C6AB2E185E5A19000981BF /* FacebookSDK.framework in Frameworks */,
 				A974343D185D79AD0083D8C4 /* UIKit.framework in Frameworks */,
 				A9743439185D79AD0083D8C4 /* Foundation.framework in Frameworks */,
 			);
@@ -104,6 +110,7 @@
 		A9743437185D79AD0083D8C4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A9C6AB2D185E5A19000981BF /* FacebookSDK.framework */,
 				A9743438185D79AD0083D8C4 /* Foundation.framework */,
 				A974343A185D79AD0083D8C4 /* CoreGraphics.framework */,
 				A974343C185D79AD0083D8C4 /* UIKit.framework */,
@@ -118,10 +125,12 @@
 				A9743447185D79AD0083D8C4 /* AppDelegate.h */,
 				A9743448185D79AD0083D8C4 /* AppDelegate.m */,
 				A974344A185D79AD0083D8C4 /* Main.storyboard */,
-				A974344D185D79AD0083D8C4 /* FirstViewController.h */,
-				A974344E185D79AD0083D8C4 /* FirstViewController.m */,
-				A9743450185D79AD0083D8C4 /* SecondViewController.h */,
-				A9743451185D79AD0083D8C4 /* SecondViewController.m */,
+				A9743472185D8E080083D8C4 /* LandingUIViewController.h */,
+				A9743473185D8E080083D8C4 /* LandingUIViewController.m */,
+				A974344D185D79AD0083D8C4 /* RecommendedNewsUIViewController.h */,
+				A974344E185D79AD0083D8C4 /* RecommendedNewsUIViewController.m */,
+				A9743450185D79AD0083D8C4 /* ReadNewsUIViewController.h */,
+				A9743451185D79AD0083D8C4 /* ReadNewsUIViewController.m */,
 				A9743453185D79AD0083D8C4 /* Images.xcassets */,
 				A974343F185D79AD0083D8C4 /* Supporting Files */,
 			);
@@ -254,9 +263,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9743452185D79AD0083D8C4 /* SecondViewController.m in Sources */,
+				A9743452185D79AD0083D8C4 /* ReadNewsUIViewController.m in Sources */,
+				A9743474185D8E080083D8C4 /* LandingUIViewController.m in Sources */,
 				A9743449185D79AD0083D8C4 /* AppDelegate.m in Sources */,
-				A974344F185D79AD0083D8C4 /* FirstViewController.m in Sources */,
+				A974344F185D79AD0083D8C4 /* RecommendedNewsUIViewController.m in Sources */,
 				A9743445185D79AD0083D8C4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -384,6 +394,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/xissysnd/recom.io/ios-news4me/news4me",
+					"/Users/xissysnd/recom.io/ios-news4me",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "news4me/news4me-Prefix.pch";
 				INFOPLIST_FILE = "news4me/news4me-Info.plist";
@@ -397,6 +412,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/xissysnd/recom.io/ios-news4me/news4me",
+					"/Users/xissysnd/recom.io/ios-news4me",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "news4me/news4me-Prefix.pch";
 				INFOPLIST_FILE = "news4me/news4me-Info.plist";
@@ -466,6 +486,7 @@
 				A974346C185D79AD0083D8C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A974346D185D79AD0083D8C4 /* Build configuration list for PBXNativeTarget "news4meTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +495,7 @@
 				A974346F185D79AD0083D8C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
