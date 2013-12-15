@@ -24,6 +24,11 @@
 		A9743467185D79AD0083D8C4 /* news4meTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9743466185D79AD0083D8C4 /* news4meTests.m */; };
 		A9743474185D8E080083D8C4 /* LandingUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9743473185D8E080083D8C4 /* LandingUIViewController.m */; };
 		A9C6AB2E185E5A19000981BF /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C6AB2D185E5A19000981BF /* FacebookSDK.framework */; };
+		A9C6C115185E5FE8000981BF /* pure.css in Resources */ = {isa = PBXBuildFile; fileRef = A9C6C110185E5FE8000981BF /* pure.css */; };
+		A9C6C117185E5FE8000981BF /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = A9C6C112185E5FE8000981BF /* style.css */; };
+		A9C6C11A185E6007000981BF /* rivets.js in Resources */ = {isa = PBXBuildFile; fileRef = A9C6C111185E5FE8000981BF /* rivets.js */; };
+		A9C6C11B185E6008000981BF /* touch.js in Resources */ = {isa = PBXBuildFile; fileRef = A9C6C113185E5FE8000981BF /* touch.js */; };
+		A9C6C11C185E6008000981BF /* zepto.js in Resources */ = {isa = PBXBuildFile; fileRef = A9C6C114185E5FE8000981BF /* zepto.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +66,11 @@
 		A9743472185D8E080083D8C4 /* LandingUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandingUIViewController.h; sourceTree = "<group>"; };
 		A9743473185D8E080083D8C4 /* LandingUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandingUIViewController.m; sourceTree = "<group>"; };
 		A9C6AB2D185E5A19000981BF /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		A9C6C110185E5FE8000981BF /* pure.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = pure.css; sourceTree = "<group>"; };
+		A9C6C111185E5FE8000981BF /* rivets.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = rivets.js; sourceTree = "<group>"; };
+		A9C6C112185E5FE8000981BF /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
+		A9C6C113185E5FE8000981BF /* touch.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = touch.js; sourceTree = "<group>"; };
+		A9C6C114185E5FE8000981BF /* zepto.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = zepto.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +142,7 @@
 				A9743450185D79AD0083D8C4 /* ReadNewsUIViewController.h */,
 				A9743451185D79AD0083D8C4 /* ReadNewsUIViewController.m */,
 				A9743453185D79AD0083D8C4 /* Images.xcassets */,
+				A9C6AB2F185E5FA9000981BF /* web */,
 				A974343F185D79AD0083D8C4 /* Supporting Files */,
 			);
 			path = news4me;
@@ -166,6 +177,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A9C6AB2F185E5FA9000981BF /* web */ = {
+			isa = PBXGroup;
+			children = (
+				A9C6C10F185E5FE8000981BF /* dist */,
+			);
+			path = web;
+			sourceTree = "<group>";
+		};
+		A9C6C10F185E5FE8000981BF /* dist */ = {
+			isa = PBXGroup;
+			children = (
+				A9C6C110185E5FE8000981BF /* pure.css */,
+				A9C6C111185E5FE8000981BF /* rivets.js */,
+				A9C6C112185E5FE8000981BF /* style.css */,
+				A9C6C113185E5FE8000981BF /* touch.js */,
+				A9C6C114185E5FE8000981BF /* zepto.js */,
+			);
+			path = dist;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -175,6 +206,7 @@
 			buildPhases = (
 				A9743431185D79AD0083D8C4 /* Sources */,
 				A9743432185D79AD0083D8C4 /* Frameworks */,
+				A9C6C11D185E602D000981BF /* ShellScript */,
 				A9743433185D79AD0083D8C4 /* Resources */,
 			);
 			buildRules = (
@@ -242,9 +274,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9C6C11A185E6007000981BF /* rivets.js in Resources */,
+				A9C6C11B185E6008000981BF /* touch.js in Resources */,
+				A9C6C11C185E6008000981BF /* zepto.js in Resources */,
 				A9743454185D79AD0083D8C4 /* Images.xcassets in Resources */,
 				A9743443185D79AD0083D8C4 /* InfoPlist.strings in Resources */,
+				A9C6C117185E5FE8000981BF /* style.css in Resources */,
 				A974344C185D79AD0083D8C4 /* Main.storyboard in Resources */,
+				A9C6C115185E5FE8000981BF /* pure.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +294,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A9C6C11D185E602D000981BF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"${PROJECT_DIR}/news4me/web\"\ngrunt";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A9743431185D79AD0083D8C4 /* Sources */ = {

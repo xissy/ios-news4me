@@ -21,3 +21,7 @@ DerivedData
 
 # CocoaPods
 Pods
+
+news4me/web/node_modules
+news4me/web/bower_components
+news4me/web/dist

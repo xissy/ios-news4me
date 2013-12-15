@@ -1,0 +1,20 @@
+{
+  "name": "ios-babyshopr",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Taeho Kim <taeho@recom.io>",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "https://github.com/blai/grunt-contrib-watch/tarball/master",
+    "grunt-contrib-coffee": "~0.7.0",
+    "grunt-contrib-jade": "~0.8.0",
+    "grunt-contrib-less": "~0.7.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-copy": "~0.4.1"
+  }
+}
