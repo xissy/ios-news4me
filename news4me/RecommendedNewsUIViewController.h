@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Recomio, Inc. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "WebUIViewController.h"
 
-@interface RecommendedNewsUIViewController : UIViewController
+@interface RecommendedNewsUIViewController : WebUIViewController
 
 @end

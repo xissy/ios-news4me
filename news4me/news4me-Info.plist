@@ -43,7 +43,7 @@
 	<key>FacebookAppID</key>
 	<string>642906452404778</string>
 	<key>FacebookDisplayName</key>
-	<string>뉴스포미</string>
+	<string>news4me</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>

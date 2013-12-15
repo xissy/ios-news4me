@@ -33,6 +33,7 @@
 		A9C6C123185E61E3000981BF /* WebWithRefreshUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C6C121185E61E3000981BF /* WebWithRefreshUIViewController.m */; };
 		A9C6C128185E6213000981BF /* WebViewJavascriptBridge.js.txt in Resources */ = {isa = PBXBuildFile; fileRef = A9C6C126185E6213000981BF /* WebViewJavascriptBridge.js.txt */; };
 		A9C6C129185E6213000981BF /* WebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C6C127185E6213000981BF /* WebViewJavascriptBridge.m */; };
+		A9C6C132185E66A7000981BF /* news4me-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9C6C131185E66A7000981BF /* news4me-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +51,6 @@
 		A9743438185D79AD0083D8C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A974343A185D79AD0083D8C4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		A974343C185D79AD0083D8C4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		A9743440185D79AD0083D8C4 /* news4me-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "news4me-Info.plist"; sourceTree = "<group>"; };
 		A9743442185D79AD0083D8C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A9743444185D79AD0083D8C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A9743446185D79AD0083D8C4 /* news4me-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "news4me-Prefix.pch"; sourceTree = "<group>"; };
@@ -82,6 +82,7 @@
 		A9C6C125185E6213000981BF /* WebViewJavascriptBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridge.h; sourceTree = "<group>"; };
 		A9C6C126185E6213000981BF /* WebViewJavascriptBridge.js.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WebViewJavascriptBridge.js.txt; sourceTree = "<group>"; };
 		A9C6C127185E6213000981BF /* WebViewJavascriptBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridge.m; sourceTree = "<group>"; };
+		A9C6C131185E66A7000981BF /* news4me-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "news4me-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,7 +168,7 @@
 		A974343F185D79AD0083D8C4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A9743440185D79AD0083D8C4 /* news4me-Info.plist */,
+				A9C6C131185E66A7000981BF /* news4me-Info.plist */,
 				A9743441185D79AD0083D8C4 /* InfoPlist.strings */,
 				A9743444185D79AD0083D8C4 /* main.m */,
 				A9743446185D79AD0083D8C4 /* news4me-Prefix.pch */,
@@ -302,6 +303,7 @@
 			files = (
 				A9C6C11A185E6007000981BF /* rivets.js in Resources */,
 				A9C6C11B185E6008000981BF /* touch.js in Resources */,
+				A9C6C132185E66A7000981BF /* news4me-Info.plist in Resources */,
 				A9C6C11C185E6008000981BF /* zepto.js in Resources */,
 				A9743454185D79AD0083D8C4 /* Images.xcassets in Resources */,
 				A9743443185D79AD0083D8C4 /* InfoPlist.strings in Resources */,
