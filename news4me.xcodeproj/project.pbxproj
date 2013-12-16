@@ -23,6 +23,7 @@
 		A9743465185D79AD0083D8C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9743463185D79AD0083D8C4 /* InfoPlist.strings */; };
 		A9743467185D79AD0083D8C4 /* news4meTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9743466185D79AD0083D8C4 /* news4meTests.m */; };
 		A9743474185D8E080083D8C4 /* LandingUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9743473185D8E080083D8C4 /* LandingUIViewController.m */; };
+		A9B6A091185E89B500DD8943 /* UserPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B6A090185E89B500DD8943 /* UserPreferences.m */; };
 		A9C6AB2E185E5A19000981BF /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C6AB2D185E5A19000981BF /* FacebookSDK.framework */; };
 		A9C6C115185E5FE8000981BF /* pure.css in Resources */ = {isa = PBXBuildFile; fileRef = A9C6C110185E5FE8000981BF /* pure.css */; };
 		A9C6C117185E5FE8000981BF /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = A9C6C112185E5FE8000981BF /* style.css */; };
@@ -33,7 +34,9 @@
 		A9C6C123185E61E3000981BF /* WebWithRefreshUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C6C121185E61E3000981BF /* WebWithRefreshUIViewController.m */; };
 		A9C6C128185E6213000981BF /* WebViewJavascriptBridge.js.txt in Resources */ = {isa = PBXBuildFile; fileRef = A9C6C126185E6213000981BF /* WebViewJavascriptBridge.js.txt */; };
 		A9C6C129185E6213000981BF /* WebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C6C127185E6213000981BF /* WebViewJavascriptBridge.m */; };
-		A9C6C132185E66A7000981BF /* news4me-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9C6C131185E66A7000981BF /* news4me-Info.plist */; };
+		A9C6C135185E7866000981BF /* MainUITabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C6C134185E7866000981BF /* MainUITabBarController.m */; };
+		A9C6C138185E7E58000981BF /* recommendedNews.html in Resources */ = {isa = PBXBuildFile; fileRef = A9C6C136185E7E58000981BF /* recommendedNews.html */; };
+		A9C6C13A185E7E62000981BF /* recommendedNews.js in Resources */ = {isa = PBXBuildFile; fileRef = A9C6C137185E7E58000981BF /* recommendedNews.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,8 @@
 		A9743466185D79AD0083D8C4 /* news4meTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = news4meTests.m; sourceTree = "<group>"; };
 		A9743472185D8E080083D8C4 /* LandingUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandingUIViewController.h; sourceTree = "<group>"; };
 		A9743473185D8E080083D8C4 /* LandingUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandingUIViewController.m; sourceTree = "<group>"; };
+		A9B6A08F185E89B500DD8943 /* UserPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserPreferences.h; sourceTree = "<group>"; };
+		A9B6A090185E89B500DD8943 /* UserPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserPreferences.m; sourceTree = "<group>"; };
 		A9C6AB2D185E5A19000981BF /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		A9C6C110185E5FE8000981BF /* pure.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = pure.css; sourceTree = "<group>"; };
 		A9C6C111185E5FE8000981BF /* rivets.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = rivets.js; sourceTree = "<group>"; };
@@ -83,6 +88,10 @@
 		A9C6C126185E6213000981BF /* WebViewJavascriptBridge.js.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WebViewJavascriptBridge.js.txt; sourceTree = "<group>"; };
 		A9C6C127185E6213000981BF /* WebViewJavascriptBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridge.m; sourceTree = "<group>"; };
 		A9C6C131185E66A7000981BF /* news4me-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "news4me-Info.plist"; sourceTree = "<group>"; };
+		A9C6C133185E7866000981BF /* MainUITabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainUITabBarController.h; sourceTree = "<group>"; };
+		A9C6C134185E7866000981BF /* MainUITabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainUITabBarController.m; sourceTree = "<group>"; };
+		A9C6C136185E7E58000981BF /* recommendedNews.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = recommendedNews.html; sourceTree = "<group>"; };
+		A9C6C137185E7E58000981BF /* recommendedNews.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = recommendedNews.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +158,8 @@
 				A974344A185D79AD0083D8C4 /* Main.storyboard */,
 				A9743472185D8E080083D8C4 /* LandingUIViewController.h */,
 				A9743473185D8E080083D8C4 /* LandingUIViewController.m */,
+				A9C6C133185E7866000981BF /* MainUITabBarController.h */,
+				A9C6C134185E7866000981BF /* MainUITabBarController.m */,
 				A974344D185D79AD0083D8C4 /* RecommendedNewsUIViewController.h */,
 				A974344E185D79AD0083D8C4 /* RecommendedNewsUIViewController.m */,
 				A9743450185D79AD0083D8C4 /* ReadNewsUIViewController.h */,
@@ -159,6 +170,7 @@
 				A9C6C120185E61E3000981BF /* WebWithRefreshUIViewController.h */,
 				A9C6C121185E61E3000981BF /* WebWithRefreshUIViewController.m */,
 				A9743453185D79AD0083D8C4 /* Images.xcassets */,
+				A9B6A08E185E899800DD8943 /* models */,
 				A9C6AB2F185E5FA9000981BF /* web */,
 				A974343F185D79AD0083D8C4 /* Supporting Files */,
 			);
@@ -194,6 +206,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A9B6A08E185E899800DD8943 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				A9B6A08F185E89B500DD8943 /* UserPreferences.h */,
+				A9B6A090185E89B500DD8943 /* UserPreferences.m */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
 		A9C6AB2F185E5FA9000981BF /* web */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +231,8 @@
 				A9C6C112185E5FE8000981BF /* style.css */,
 				A9C6C113185E5FE8000981BF /* touch.js */,
 				A9C6C114185E5FE8000981BF /* zepto.js */,
+				A9C6C136185E7E58000981BF /* recommendedNews.html */,
+				A9C6C137185E7E58000981BF /* recommendedNews.js */,
 			);
 			path = dist;
 			sourceTree = "<group>";
@@ -301,9 +324,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9C6C13A185E7E62000981BF /* recommendedNews.js in Resources */,
 				A9C6C11A185E6007000981BF /* rivets.js in Resources */,
 				A9C6C11B185E6008000981BF /* touch.js in Resources */,
-				A9C6C132185E66A7000981BF /* news4me-Info.plist in Resources */,
+				A9C6C138185E7E58000981BF /* recommendedNews.html in Resources */,
 				A9C6C11C185E6008000981BF /* zepto.js in Resources */,
 				A9743454185D79AD0083D8C4 /* Images.xcassets in Resources */,
 				A9743443185D79AD0083D8C4 /* InfoPlist.strings in Resources */,
@@ -348,7 +372,9 @@
 				A9743452185D79AD0083D8C4 /* ReadNewsUIViewController.m in Sources */,
 				A9C6C129185E6213000981BF /* WebViewJavascriptBridge.m in Sources */,
 				A9C6C122185E61E3000981BF /* WebUIViewController.m in Sources */,
+				A9B6A091185E89B500DD8943 /* UserPreferences.m in Sources */,
 				A9743474185D8E080083D8C4 /* LandingUIViewController.m in Sources */,
+				A9C6C135185E7866000981BF /* MainUITabBarController.m in Sources */,
 				A9743449185D79AD0083D8C4 /* AppDelegate.m in Sources */,
 				A9C6C123185E61E3000981BF /* WebWithRefreshUIViewController.m in Sources */,
 				A974344F185D79AD0083D8C4 /* RecommendedNewsUIViewController.m in Sources */,

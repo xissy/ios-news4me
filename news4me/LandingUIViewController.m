@@ -8,6 +8,8 @@
 
 #import <FacebookSDK/FacebookSDK.h>
 #import "LandingUIViewController.h"
+#import "MainUITabBarController.h"
+#import "UserPreferences.h"
 
 @interface LandingUIViewController ()
 @property (weak, nonatomic) IBOutlet FBLoginView *loginView;
@@ -37,10 +39,15 @@
 // This method will be called when the user information has been fetched
 - (void)loginViewFetchedUserInfo:(FBLoginView *)loginView
                             user:(id<FBGraphUser>)user {
-    NSLog(@"user.id: %@, user.name: %@", user.id, user.name);
-//    NSLog(@"%@", user);
+    UserPreferences* userPreferences = [UserPreferences getInstance];
+    
+    userPreferences.facebookUserId = user.id;
+    userPreferences.facebookUserName = user.name;
+    
     NSString *fbAccessToken = [[[FBSession activeSession] accessTokenData] accessToken];
-    NSLog(@"acceccToken: %@", fbAccessToken);
+    userPreferences.facebookAccessToken = fbAccessToken;
+    
+    [self performSegueWithIdentifier:@"SegueToTabBarController" sender:self];
 }
 
 // Logged-in user experience

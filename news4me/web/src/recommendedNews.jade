@@ -1,0 +1,24 @@
+doctype 5
+html(lang='ko')
+  head
+    meta(charset='utf-8')
+    link(href='pure.css', rel='stylesheet', type='text/css')
+    link(href='style.css', rel='stylesheet', type='text/css')
+
+  body#recommendedNewsPage
+    #articles(rv-each-article='articles', rv-on-tap='article.onTap')
+      .article
+        h1.title { article.title }
+        .meta
+          .site { article.siteTitle }
+          .pubDate { article.pubDateString }
+        .imageBox
+          img(rv-src='article.imageUrl', rv-show='article.hasImage')
+        ul.summarizedSentences(rv-each-sentence='article.summarizedSentences')
+          li.sentence { sentence }
+        p.relatedKeywords 키워드: { article.relatedKeywords }
+
+    script(type='text/javascript', src='zepto.js')
+    script(type='text/javascript', src='touch.js')
+    script(type='text/javascript', src='rivets.js')
+    script(type='text/javascript', src='recommendedNews.js')
