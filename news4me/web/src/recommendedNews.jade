@@ -16,7 +16,7 @@ html(lang='ko')
           img(rv-src='article.imageUrl', rv-show='article.hasImage')
         ul.summarizedSentences(rv-each-sentence='article.summarizedSentences')
           li.sentence { sentence }
-        p.relatedKeywords 키워드: { article.relatedKeywords }
+        p.relatedKeywords 왜? { article.relatedKeywords }
 
     script(type='text/javascript', src='zepto.js')
     script(type='text/javascript', src='touch.js')
