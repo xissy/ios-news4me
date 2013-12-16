@@ -39,8 +39,11 @@ $(document).on 'ajaxError', (xhr, options, error) ->
 loadArticles = ->
   $.getJSON recommendedNewsApiUrl, (currentArticles) ->
     for article in currentArticles
-      article.onTap = (e) ->
-        alert e
+      do (article) ->
+        article.onTap = (e) ->
+          bridge.send
+            message: 'onTapArticle'
+            articleUrl: article.articleUrl
 
       article.pubDate = new Date article.pubDate
       d = article.pubDate

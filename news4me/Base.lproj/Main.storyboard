@@ -24,6 +24,7 @@
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="76a-CD-W5e">
                                 <rect key="frame" x="150" y="274" width="20" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -32,11 +33,53 @@
                     <connections>
                         <outlet property="activityIndicator" destination="76a-CD-W5e" id="HKB-8W-eDT"/>
                         <outlet property="webView" destination="sYx-BJ-XYZ" id="gYN-Lf-6ak"/>
+                        <segue destination="OUi-tz-XW5" kind="modal" identifier="SegueToFullArticleWebUIViewController" id="bq7-lH-fnG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qh2-T1-AhA" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1179" y="-138"/>
+        </scene>
+        <!--Full Article Web View Controller-->
+        <scene sceneID="wVo-Xp-a69">
+            <objects>
+                <viewController id="zmz-ps-KN6" userLabel="Full Article Web View Controller" customClass="FullArticleWebUIViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TcC-ql-gYf"/>
+                        <viewControllerLayoutGuide type="bottom" id="DNY-2L-dEC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oYS-tZ-rb1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z1y-ji-AO4">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="tS0-2u-xjc">
+                                <rect key="frame" x="150" y="274" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="기사 전문 보기" id="SxR-d6-bOJ">
+                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="sZ5-Gq-toP">
+                            <connections>
+                                <action selector="touchExitButton:" destination="zmz-ps-KN6" id="vnI-Up-9vx"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="activityIndicator" destination="tS0-2u-xjc" id="lrs-0a-qPp"/>
+                        <outlet property="webView" destination="Z1y-ji-AO4" id="k33-zE-Tej"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nzd-jC-wN3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2164" y="-140"/>
         </scene>
         <!--Deleted News View Controller-->
         <scene sceneID="rQM-NC-23w">
@@ -217,6 +260,10 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="VUJ-Qt-GmL">
+                        <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="CZ4-MO-1fc" kind="relationship" relationship="rootViewController" id="FSc-gh-q7k"/>
                     </connections>
@@ -243,6 +290,28 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BTw-WI-Wto" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="659" y="2505"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="l62-t0-Bx8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OUi-tz-XW5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7YT-WU-2DZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="n7p-GM-OG8">
+                        <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="zmz-ps-KN6" kind="relationship" relationship="rootViewController" id="JZI-ja-uTH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jJm-YE-VTf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1638" y="-140"/>
         </scene>
     </scenes>
     <resources>

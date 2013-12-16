@@ -24,6 +24,9 @@
 		A9743467185D79AD0083D8C4 /* news4meTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9743466185D79AD0083D8C4 /* news4meTests.m */; };
 		A9743474185D8E080083D8C4 /* LandingUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9743473185D8E080083D8C4 /* LandingUIViewController.m */; };
 		A9B6A091185E89B500DD8943 /* UserPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B6A090185E89B500DD8943 /* UserPreferences.m */; };
+		A9B6A094185EB49600DD8943 /* FullArticleWebUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B6A093185EB49600DD8943 /* FullArticleWebUIViewController.m */; };
+		A9B6A09A185ECBD700DD8943 /* NJKWebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B6A097185ECBD700DD8943 /* NJKWebViewProgress.m */; };
+		A9B6A09B185ECBD700DD8943 /* NJKWebViewProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B6A099185ECBD700DD8943 /* NJKWebViewProgressView.m */; };
 		A9C6AB2E185E5A19000981BF /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C6AB2D185E5A19000981BF /* FacebookSDK.framework */; };
 		A9C6C115185E5FE8000981BF /* pure.css in Resources */ = {isa = PBXBuildFile; fileRef = A9C6C110185E5FE8000981BF /* pure.css */; };
 		A9C6C117185E5FE8000981BF /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = A9C6C112185E5FE8000981BF /* style.css */; };
@@ -74,6 +77,12 @@
 		A9743473185D8E080083D8C4 /* LandingUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandingUIViewController.m; sourceTree = "<group>"; };
 		A9B6A08F185E89B500DD8943 /* UserPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserPreferences.h; sourceTree = "<group>"; };
 		A9B6A090185E89B500DD8943 /* UserPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserPreferences.m; sourceTree = "<group>"; };
+		A9B6A092185EB49600DD8943 /* FullArticleWebUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FullArticleWebUIViewController.h; sourceTree = "<group>"; };
+		A9B6A093185EB49600DD8943 /* FullArticleWebUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FullArticleWebUIViewController.m; sourceTree = "<group>"; };
+		A9B6A096185ECBD700DD8943 /* NJKWebViewProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJKWebViewProgress.h; sourceTree = "<group>"; };
+		A9B6A097185ECBD700DD8943 /* NJKWebViewProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJKWebViewProgress.m; sourceTree = "<group>"; };
+		A9B6A098185ECBD700DD8943 /* NJKWebViewProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJKWebViewProgressView.h; sourceTree = "<group>"; };
+		A9B6A099185ECBD700DD8943 /* NJKWebViewProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJKWebViewProgressView.m; sourceTree = "<group>"; };
 		A9C6AB2D185E5A19000981BF /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		A9C6C110185E5FE8000981BF /* pure.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = pure.css; sourceTree = "<group>"; };
 		A9C6C111185E5FE8000981BF /* rivets.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = rivets.js; sourceTree = "<group>"; };
@@ -156,12 +165,15 @@
 				A9743447185D79AD0083D8C4 /* AppDelegate.h */,
 				A9743448185D79AD0083D8C4 /* AppDelegate.m */,
 				A974344A185D79AD0083D8C4 /* Main.storyboard */,
+				A9743453185D79AD0083D8C4 /* Images.xcassets */,
 				A9743472185D8E080083D8C4 /* LandingUIViewController.h */,
 				A9743473185D8E080083D8C4 /* LandingUIViewController.m */,
 				A9C6C133185E7866000981BF /* MainUITabBarController.h */,
 				A9C6C134185E7866000981BF /* MainUITabBarController.m */,
 				A974344D185D79AD0083D8C4 /* RecommendedNewsUIViewController.h */,
 				A974344E185D79AD0083D8C4 /* RecommendedNewsUIViewController.m */,
+				A9B6A092185EB49600DD8943 /* FullArticleWebUIViewController.h */,
+				A9B6A093185EB49600DD8943 /* FullArticleWebUIViewController.m */,
 				A9743450185D79AD0083D8C4 /* ReadNewsUIViewController.h */,
 				A9743451185D79AD0083D8C4 /* ReadNewsUIViewController.m */,
 				A9C6C124185E6213000981BF /* WebViewJavascriptBridge */,
@@ -169,7 +181,7 @@
 				A9C6C11F185E61E3000981BF /* WebUIViewController.m */,
 				A9C6C120185E61E3000981BF /* WebWithRefreshUIViewController.h */,
 				A9C6C121185E61E3000981BF /* WebWithRefreshUIViewController.m */,
-				A9743453185D79AD0083D8C4 /* Images.xcassets */,
+				A9B6A095185ECBD700DD8943 /* NJKWebViewProgress */,
 				A9B6A08E185E899800DD8943 /* models */,
 				A9C6AB2F185E5FA9000981BF /* web */,
 				A974343F185D79AD0083D8C4 /* Supporting Files */,
@@ -213,6 +225,17 @@
 				A9B6A090185E89B500DD8943 /* UserPreferences.m */,
 			);
 			path = models;
+			sourceTree = "<group>";
+		};
+		A9B6A095185ECBD700DD8943 /* NJKWebViewProgress */ = {
+			isa = PBXGroup;
+			children = (
+				A9B6A096185ECBD700DD8943 /* NJKWebViewProgress.h */,
+				A9B6A097185ECBD700DD8943 /* NJKWebViewProgress.m */,
+				A9B6A098185ECBD700DD8943 /* NJKWebViewProgressView.h */,
+				A9B6A099185ECBD700DD8943 /* NJKWebViewProgressView.m */,
+			);
+			path = NJKWebViewProgress;
 			sourceTree = "<group>";
 		};
 		A9C6AB2F185E5FA9000981BF /* web */ = {
@@ -373,11 +396,14 @@
 				A9C6C129185E6213000981BF /* WebViewJavascriptBridge.m in Sources */,
 				A9C6C122185E61E3000981BF /* WebUIViewController.m in Sources */,
 				A9B6A091185E89B500DD8943 /* UserPreferences.m in Sources */,
+				A9B6A09A185ECBD700DD8943 /* NJKWebViewProgress.m in Sources */,
 				A9743474185D8E080083D8C4 /* LandingUIViewController.m in Sources */,
 				A9C6C135185E7866000981BF /* MainUITabBarController.m in Sources */,
+				A9B6A09B185ECBD700DD8943 /* NJKWebViewProgressView.m in Sources */,
 				A9743449185D79AD0083D8C4 /* AppDelegate.m in Sources */,
 				A9C6C123185E61E3000981BF /* WebWithRefreshUIViewController.m in Sources */,
 				A974344F185D79AD0083D8C4 /* RecommendedNewsUIViewController.m in Sources */,
+				A9B6A094185EB49600DD8943 /* FullArticleWebUIViewController.m in Sources */,
 				A9743445185D79AD0083D8C4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
