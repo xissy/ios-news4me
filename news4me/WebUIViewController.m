@@ -7,11 +7,8 @@
 //
 
 #import "WebUIViewController.h"
-#import "WebViewJavascriptBridge.h"
 
 @interface WebUIViewController () <UIWebViewDelegate>
-// this bridge will be created in the instance.
-@property (strong, nonatomic) WebViewJavascriptBridge* bridge;
 
 @end
 
@@ -48,6 +45,8 @@
 	[self.activityIndicator startAnimating];
     
     // set webView default options.
+    [self.webView setDelegate:self];
+    [self.webView.scrollView setDelegate:self];
     [self.webView.scrollView setDelaysContentTouches:NO];
     [self.webView.scrollView setDecelerationRate:UIScrollViewDecelerationRateNormal];
     
@@ -81,6 +80,16 @@
 {
     NSLog(@"webViewDidFinishLoad");
 	[self.activityIndicator stopAnimating];
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    if (scrollView.contentOffset.y > scrollView.contentSize.height - scrollView.frame.size.height) {
+        [self handleReachingBottom];
+    }
+}
+
+- (void)handleReachingBottom {
+    NSLog(@"handleReachingBottom");
 }
 
 @end

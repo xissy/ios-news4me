@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WebViewJavascriptBridge.h"
 
-@interface WebUIViewController : UIViewController <UIWebViewDelegate>
+@interface WebUIViewController : UIViewController <UIWebViewDelegate, UIScrollViewDelegate>
 
 @property (retain, nonatomic) NSURL* webViewUrl;
 @property (retain, nonatomic) IBOutlet UIWebView *webView;
+@property (retain, nonatomic) WebViewJavascriptBridge* bridge;
 @property (retain, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
     
 @end

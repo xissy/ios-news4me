@@ -14,6 +14,7 @@
 @interface RecommendedNewsUIViewController ()
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
+@property (assign, atomic) BOOL isLoading;
 
 @end
 
@@ -23,6 +24,7 @@
 {
     [super viewDidLoad];
 	
+    self.isLoading = YES;
     self.webViewUrl = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"recommendedNews" ofType:@"html"]isDirectory:NO];
     [self.webView loadRequest:[NSURLRequest requestWithURL:self.webViewUrl]];
 }
@@ -50,9 +52,21 @@
             responseCallback(url);
             
         } else if ([message isEqualToString:@"onArticelsLoaded"]) {
+            self.isLoading = NO;
             [self.activityIndicator stopAnimating];
         }
     }
+}
+
+- (void)handleReachingBottom
+{
+    if (self.isLoading) {
+        return;
+    }
+    
+    self.isLoading = YES;
+    [self.activityIndicator startAnimating];
+    [self.bridge send:@"loadMore"];
 }
 
 @end
