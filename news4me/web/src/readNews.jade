@@ -5,7 +5,7 @@ html(lang='ko')
     link(href='pure.css', rel='stylesheet', type='text/css')
     link(href='style.css', rel='stylesheet', type='text/css')
 
-  body#recommendedNewsPage
+  body#readNewsPage
     #articles(rv-each-article='articles', rv-on-tap='article.onTap')
       .article
         .id { article.id }
@@ -23,4 +23,4 @@ html(lang='ko')
     script(type='text/javascript', src='touch.js')
     script(type='text/javascript', src='rivets.js')
     script(type='text/javascript', src='config.js')
-    script(type='text/javascript', src='recommendedNews.js')
+    script(type='text/javascript', src='readNews.js')

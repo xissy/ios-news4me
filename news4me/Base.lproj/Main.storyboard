@@ -38,7 +38,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qh2-T1-AhA" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1179" y="-138"/>
+            <point key="canvasLocation" x="1081" y="-138"/>
         </scene>
         <!--Full Article Web View Controller-->
         <scene sceneID="wVo-Xp-a69">
@@ -79,7 +79,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nzd-jC-wN3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2164" y="-140"/>
+            <point key="canvasLocation" x="2057" y="334"/>
         </scene>
         <!--Deleted News View Controller-->
         <scene sceneID="rQM-NC-23w">
@@ -168,26 +168,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="29h-N2-YGT">
-                                <rect key="frame" x="20" y="158" width="280" height="42"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" text="Loaded by the second view controller — an instance of SecondViewController — specified in the app delegate." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DcM-Fx-MKR">
-                                <rect key="frame" x="20" y="240" width="280" height="88"/>
-                                <fontDescription key="fontDescription" type="system" size="system"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textView>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nZ9-0o-dV2">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Tkb-lF-zkB">
+                                <rect key="frame" x="150" y="274" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="읽은 뉴스" image="eye" id="Z7h-1E-pvt"/>
+                    <navigationItem key="navigationItem" title="읽은 뉴스" id="cQn-QP-T8o"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="Tkb-lF-zkB" id="7b4-nw-Lac"/>
+                        <outlet property="webView" destination="nZ9-0o-dV2" id="cEF-xf-FLN"/>
+                        <segue destination="OUi-tz-XW5" kind="modal" identifier="SegueToFullArticleWebUIViewController" id="15h-tM-y1h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3qq-4t-Ow8" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1179" y="498"/>
+            <point key="canvasLocation" x="1081" y="538"/>
         </scene>
         <!--Landing View Controller-->
         <scene sceneID="mkZ-Fn-Slq">
@@ -239,7 +242,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="rcp-LW-NXn" kind="relationship" relationship="viewControllers" id="SUk-Ux-ee1"/>
-                        <segue destination="QUy-BD-bpt" kind="relationship" relationship="viewControllers" id="M8t-EP-wfW"/>
+                        <segue destination="rtu-Q2-0YQ" kind="relationship" relationship="viewControllers" id="M8t-EP-wfW"/>
                         <segue destination="8yk-Az-DzQ" kind="relationship" relationship="viewControllers" id="QTU-LK-Fuf"/>
                         <segue destination="IXK-y8-ly6" kind="relationship" relationship="viewControllers" id="IA8-5H-HVs"/>
                         <segue destination="XRq-lu-osY" kind="relationship" relationship="viewControllers" id="ege-bf-5o6"/>
@@ -311,7 +314,26 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jJm-YE-VTf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1638" y="-140"/>
+            <point key="canvasLocation" x="1626" y="334"/>
+        </scene>
+        <!--Navigation Controller - 읽은 뉴스-->
+        <scene sceneID="NQp-ox-Asg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rtu-Q2-0YQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="읽은 뉴스" image="eye" id="Z7h-1E-pvt"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vvl-Jy-L2m">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="QUy-BD-bpt" kind="relationship" relationship="rootViewController" id="yuj-Rf-M03"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MuB-ZU-lsw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="653" y="538"/>
         </scene>
     </scenes>
     <resources>
@@ -325,4 +347,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="bq7-lH-fnG"/>
+    </inferredMetricsTieBreakers>
 </document>

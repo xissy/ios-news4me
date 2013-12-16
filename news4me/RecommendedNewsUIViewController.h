@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Recomio, Inc. All rights reserved.
 //
 
-#import "WebWithRefreshUIViewController.h"
+#import "NewsUIViewController.h"
 
-@interface RecommendedNewsUIViewController : WebWithRefreshUIViewController
+@interface RecommendedNewsUIViewController : NewsUIViewController
 
 @end

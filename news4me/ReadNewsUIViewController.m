@@ -9,6 +9,8 @@
 #import "ReadNewsUIViewController.h"
 
 @interface ReadNewsUIViewController ()
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 
 @end
 
@@ -17,13 +19,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+    NSLog(@"ReadNewsUIViewController");
+    
+    self.webViewUrl = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"readNews" ofType:@"html"]isDirectory:NO];
+    [self.webView loadRequest:[NSURLRequest requestWithURL:self.webViewUrl]];
 }
 
 @end

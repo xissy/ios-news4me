@@ -12,64 +12,64 @@ body,
     font: -apple-system-body;
 }
 
-body#recommendedNewsPage {
+#articles {
+  .article {
+    border-bottom: 1px solid #ccc;
 
-  #articles {
-    .article {
-      border-bottom: 1px solid #ccc;
+    .id {
+      display: none;
+    }
 
-      h1.title {
-        margin-bottom: 0;
-        font-size: 1.2em;
-        font-weight: bold;
-        text-align: justify;
+    h1.title {
+      margin-bottom: 0;
+      font-size: 1.2em;
+      font-weight: bold;
+      text-align: justify;
+      line-height: 1.1;
+    }
+
+    .meta {
+      margin: 0 0 10px 0;
+      text-align: right;
+      color: #aaa;
+
+      .site {
+        font-size: 0.8em;
         line-height: 1.1;
       }
 
-      .meta {
-        margin: 0 0 10px 0;
-        text-align: right;
-        color: #aaa;
-
-        .site {
-          font-size: 0.8em;
-          line-height: 1.1;
-        }
-
-        .pubDate {
-          font-size: 0.8em;
-          line-height: 1.1;
-        }
-      }
-
-      .imageBox {
-        text-align: center;
-
-        img {
-          width: 80%;
-        }
-      }
-
-      ul.summarizedSentences {
-        list-style-type: none;
-        padding: 0px;
-        margin: 0px;
-        color: #444;
-
-        li.sentence {
-          margin: 10px 5px;
-          font-weight: 100;
-          text-align: justify;
-          line-height: 1.1;
-        }
-      }
-
-      p.relatedKeywords {
-        margin-top: 3px;
-        font-size: 0.75em;
+      .pubDate {
+        font-size: 0.8em;
         line-height: 1.1;
       }
     }
+
+    .imageBox {
+      text-align: center;
+
+      img {
+        width: 80%;
+      }
+    }
+
+    ul.summarizedSentences {
+      list-style-type: none;
+      padding: 0px;
+      margin: 0px;
+      color: #444;
+
+      li.sentence {
+        margin: 10px 5px;
+        font-weight: 100;
+        text-align: justify;
+        line-height: 1.1;
+      }
+    }
+
+    p.relatedKeywords {
+      margin-top: 3px;
+      font-size: 0.75em;
+      line-height: 1.1;
+    }
   }
-  
 }

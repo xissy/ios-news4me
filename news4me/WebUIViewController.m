@@ -71,6 +71,11 @@
     NSLog(@"handleWebViewJavascriptBridge");
 }
 
+- (void)handleReachingBottom {
+    NSLog(@"handleReachingBottom");
+}
+
+#pragma mark - UIWebViewDelegate
 - (void)webViewDidStartLoad:(UIWebView *)webView
 {
     NSLog(@"webViewDidStartLoad");
@@ -82,14 +87,11 @@
 	[self.activityIndicator stopAnimating];
 }
 
+#pragma mark - UIScrollViewDelegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     if (scrollView.contentOffset.y > scrollView.contentSize.height - scrollView.frame.size.height) {
         [self handleReachingBottom];
     }
-}
-
-- (void)handleReachingBottom {
-    NSLog(@"handleReachingBottom");
 }
 
 @end

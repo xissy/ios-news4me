@@ -1,8 +1,7 @@
 bridge = null
 articles = []
 userId = null
-accessToken = null
-shownArticleIds = []
+articleOffset = 0
 
 
 rivets.bind document.getElementById('articles'),
@@ -29,7 +28,6 @@ connectWebViewJavascriptBridge (currentBridge) ->
 
   bridge.send 'init', (result) ->
     userId = result.userId
-    accessToken = result.accessToken
     loadArticles()
 
 
@@ -41,7 +39,8 @@ $(document).on 'ajaxError', (xhr, options, error) ->
 
 
 loadArticles = ->
-  apiUrl = "#{baseUrl}/news/facebook/#{userId}?accessToken=#{accessToken}"
+  apiUrl = "#{baseUrl}/news/facebook/#{userId}/read/#{articleOffset}"
+  articleOffset += 20
 
   $.getJSON apiUrl, (currentArticles) ->
     for article in currentArticles
@@ -53,39 +52,19 @@ loadArticles = ->
             articleId: article.id
 
       article.pubDate = new Date article.pubDate
-      d = article.pubDate
-      article.pubDateString = "#{d.getFullYear()}년 #{d.getMonth()+1}월 #{d.getDate()}일 #{d.getHours()}시 #{d.getMinutes()}분"
+      article.pubDateString = article.pubDateFromNowString
 
       article.hasImage = false
-      if article.imageUrls?[0]?
-        article.imageUrl = article.imageUrls[0]
-        article.hasImage = true
+      article.hasImage = true  if article.imageUrl?
 
-      article.relatedKeywords = article.words.join ', '
+      article.relatedKeywords = article.keywords.join ', '
 
-      articles.push article
+      isDuplicated = false
+      for storedArticle in articles by -1
+        if storedArticle.id is article.id
+          isDuplicated = true
+          break
+      
+      articles.push article  if not isDuplicated
 
     bridge.send 'onArticlesLoaded'
-
-
-notifyShownArticle = (articleId, callback) ->
-  apiUrl = "#{baseUrl}/articles/#{articleId}/show/from/facebook/#{userId}"
-
-  $.get apiUrl, (data) ->
-    callback null, data  if callback?
-
-
-window.onscroll = (e) ->
-  bodyTag = $('body')
-  articleIdTags = $('.article .id')
-
-  articleIdTags.each (index, item) ->
-    articleIdTag = articleIdTags.eq(index)
-    articleId = articleIdTag.text()
-    articleIdTagTop = articleIdTag.parent().offset().top
-    
-    return  if articleId in shownArticleIds
-
-    if articleIdTagTop < bodyTag.scrollTop()
-      shownArticleIds.push articleId
-      notifyShownArticle articleId
