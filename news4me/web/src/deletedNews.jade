@@ -5,7 +5,7 @@ html(lang='ko')
     link(href='pure.css', rel='stylesheet', type='text/css')
     link(href='style.css', rel='stylesheet', type='text/css')
 
-  body#readNewsPage
+  body#deletedNewsPage
     #articles(rv-each-article='articles')
       .article(rv-id='article.id | articleId')
         .contentArea(rv-on-tap='article.onTap')
@@ -26,9 +26,6 @@ html(lang='ko')
           span.starOffButton.bottumButton(rv-show='article.isStarred', rv-on-tap='article.onTapStarOff')
             img(src='star_on.png')
             | 별표취소
-          span.removeButton.bottumButton(rv-on-tap='article.onTapDelete')
-            img(src='remove.png')
-            |  삭제하기
 
     .loading
 
@@ -36,4 +33,4 @@ html(lang='ko')
     script(type='text/javascript', src='touch.js')
     script(type='text/javascript', src='rivets.js')
     script(type='text/javascript', src='common.js')
-    script(type='text/javascript', src='recommendedNews.js')
+    script(type='text/javascript', src='deletedNews.js')

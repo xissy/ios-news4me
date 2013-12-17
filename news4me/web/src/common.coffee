@@ -34,21 +34,35 @@ loadArticles = (apiUrl, bridge, callback) ->
   $.getJSON apiUrl, (currentArticles) ->
     for article in currentArticles
       do (article) ->
+        articleId = article.id
+        
         article.onTap = (e) ->
           bridge.send
             message: 'onTapArticle'
             articleUrl: article.articleUrl
             articleId: article.id
+        
         article.onTapStarOn = (e) ->
           article.isStarred = not article.isStarred
           article.isNotStarred = not article.isNotStarred
+          apiUrl = "#{baseUrl}/articles/#{articleId}/star/from/facebook/#{userId}"
+          $.get apiUrl, (data) ->
+            callback null, data  if callback?
+        
         article.onTapStarOff = (e) ->
           article.isStarred = not article.isStarred
           article.isNotStarred = not article.isNotStarred
-        article.onTapRemove = (e) ->
+          apiUrl = "#{baseUrl}/articles/#{articleId}/star/delete/from/facebook/#{userId}"
+          $.get apiUrl, (data) ->
+            callback null, data  if callback?
+        
+        article.onTapDelete = (e) ->
           $("#article#{article.id}").hide()
+          apiUrl = "#{baseUrl}/articles/#{articleId}/delete/from/facebook/#{userId}"
+          $.get apiUrl, (data) ->
+            callback null, data  if callback?
 
-      article.isStarred = false
+      article.isStarred = false  if not article.isStarred?
       article.isNotStarred = not article.isStarred
 
       article.pubDate = new Date article.pubDate

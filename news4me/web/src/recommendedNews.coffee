@@ -20,7 +20,6 @@ connectWebViewJavascriptBridge (currentBridge) ->
 
 notifyShownArticle = (articleId, callback) ->
   apiUrl = "#{baseUrl}/articles/#{articleId}/show/from/facebook/#{userId}"
-
   $.get apiUrl, (data) ->
     callback null, data  if callback?
 

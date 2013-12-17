@@ -89,21 +89,38 @@
         <!--Deleted News View Controller-->
         <scene sceneID="rQM-NC-23w">
             <objects>
-                <viewController id="IXK-y8-ly6" userLabel="Deleted News View Controller" sceneMemberID="viewController">
+                <viewController id="IXK-y8-ly6" userLabel="Deleted News View Controller" customClass="DeletedNewsUIViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DNz-R7-kkN"/>
                         <viewControllerLayoutGuide type="bottom" id="TZC-KT-cUy"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="FKY-Yt-Gyf">
+                    <view key="view" contentMode="scaleToFill" id="MYP-ol-Pvh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gnz-2b-cxU">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="cjv-ud-OSc">
+                                <rect key="frame" x="150" y="274" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="삭제한 뉴스" image="tag" id="fUF-CV-9K0"/>
+                    <navigationItem key="navigationItem" title="삭제한 뉴스" id="8mn-39-YrT"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="cjv-ud-OSc" id="fwU-B3-VKK"/>
+                        <outlet property="webView" destination="gnz-2b-cxU" id="95g-ra-poS"/>
+                        <segue destination="OUi-tz-XW5" kind="modal" identifier="SegueToFullArticleWebUIViewController" id="D4w-cR-9Vk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vAO-dp-5vd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="653" y="1826"/>
+            <point key="canvasLocation" x="1081" y="1888"/>
         </scene>
         <!--Table View Controller - More-->
         <scene sceneID="GKU-Wq-Q8n">
@@ -114,12 +131,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Osx-9g-qJJ">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="laB-8E-Wz3" detailTextLabel="DAz-Jb-8dR" style="IBUITableViewCellStyleValue2" id="Osx-9g-qJJ">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Osx-9g-qJJ" id="qtn-cZ-9WN">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="laB-8E-Wz3">
+                                            <rect key="frame" x="15" y="13" width="91" height="17"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Detail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DAz-Jb-8dR">
+                                            <rect key="frame" x="112" y="13" width="37" height="17"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="AwP-Fw-Boh">
@@ -140,26 +173,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YEO-N8-Gfg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1136" y="2505"/>
-        </scene>
-        <!--Starred News View Controller-->
-        <scene sceneID="5OO-TJ-Bc4">
-            <objects>
-                <viewController id="8yk-Az-DzQ" userLabel="Starred News View Controller" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ocE-jJ-oai"/>
-                        <viewControllerLayoutGuide type="bottom" id="nK5-jJ-mU2"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="FPn-sT-jkO">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="별표한 뉴스" image="star" id="I15-iQ-Rt8"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="e2C-qi-byF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="653" y="1163"/>
+            <point key="canvasLocation" x="1081" y="2571"/>
         </scene>
         <!--Read News View Controller-->
         <scene sceneID="ot8-2e-RuS">
@@ -248,8 +262,8 @@
                     <connections>
                         <segue destination="rcp-LW-NXn" kind="relationship" relationship="viewControllers" id="SUk-Ux-ee1"/>
                         <segue destination="rtu-Q2-0YQ" kind="relationship" relationship="viewControllers" id="M8t-EP-wfW"/>
-                        <segue destination="8yk-Az-DzQ" kind="relationship" relationship="viewControllers" id="QTU-LK-Fuf"/>
-                        <segue destination="IXK-y8-ly6" kind="relationship" relationship="viewControllers" id="IA8-5H-HVs"/>
+                        <segue destination="DZE-ph-4M7" kind="relationship" relationship="viewControllers" id="QTU-LK-Fuf"/>
+                        <segue destination="iiR-GJ-JqQ" kind="relationship" relationship="viewControllers" id="IA8-5H-HVs"/>
                         <segue destination="XRq-lu-osY" kind="relationship" relationship="viewControllers" id="ege-bf-5o6"/>
                     </connections>
                 </tabBarController>
@@ -297,7 +311,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BTw-WI-Wto" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="659" y="2505"/>
+            <point key="canvasLocation" x="653" y="2571"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="l62-t0-Bx8">
@@ -340,6 +354,80 @@
             </objects>
             <point key="canvasLocation" x="653" y="538"/>
         </scene>
+        <!--Navigation Controller - 별표한 뉴스-->
+        <scene sceneID="OqC-Rg-coa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DZE-ph-4M7" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="별표한 뉴스" image="star" id="I15-iQ-Rt8"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="86M-UF-0Fv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3yG-VI-kqD" kind="relationship" relationship="rootViewController" id="DM2-1t-42d"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ss8-fW-nrH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="653" y="1214"/>
+        </scene>
+        <!--Starred NewsUI View Controller - 별표한 뉴스-->
+        <scene sceneID="nDL-U7-Zw6">
+            <objects>
+                <viewController id="3yG-VI-kqD" customClass="StarredNewsUIViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cjS-aK-Ve1"/>
+                        <viewControllerLayoutGuide type="bottom" id="9ki-YP-rzn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ocI-lI-s7J">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UIW-ca-mj9">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="eTe-b4-10U">
+                                <rect key="frame" x="150" y="274" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="별표한 뉴스" id="Anp-2r-JaP"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="eTe-b4-10U" id="7O6-AU-vem"/>
+                        <outlet property="webView" destination="UIW-ca-mj9" id="Wg8-sH-0YW"/>
+                        <segue destination="OUi-tz-XW5" kind="modal" identifier="SegueToFullArticleWebUIViewController" id="Ebi-qS-QPh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tDL-ev-5J3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1081" y="1214"/>
+        </scene>
+        <!--Navigation Controller - 삭제한 뉴스-->
+        <scene sceneID="9lM-PM-J5U">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iiR-GJ-JqQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="삭제한 뉴스" image="tag" id="fUF-CV-9K0"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="V4w-5d-Q77">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="IXK-y8-ly6" kind="relationship" relationship="rootViewController" id="bn1-BJ-UP8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M6M-bY-5Sr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="653" y="1888"/>
+        </scene>
     </scenes>
     <resources>
         <image name="eye" width="30" height="30"/>
@@ -353,6 +441,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="bq7-lH-fnG"/>
+        <segue reference="D4w-cR-9Vk"/>
     </inferredMetricsTieBreakers>
 </document>

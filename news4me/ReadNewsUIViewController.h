@@ -6,7 +6,6 @@
 //  Copyright (c) 2013 Recomio, Inc. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import "NewsUIViewController.h"
 
 @interface ReadNewsUIViewController : NewsUIViewController

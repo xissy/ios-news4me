@@ -11,6 +11,12 @@
 		A905B1D1186001F6007B1D5F /* star_off.png in Resources */ = {isa = PBXBuildFile; fileRef = A905B1CE186001F6007B1D5F /* star_off.png */; };
 		A905B1D2186001F6007B1D5F /* star_on.png in Resources */ = {isa = PBXBuildFile; fileRef = A905B1CF186001F6007B1D5F /* star_on.png */; };
 		A905B1D5186030EA007B1D5F /* common.js in Resources */ = {isa = PBXBuildFile; fileRef = A905B1D3186030E0007B1D5F /* common.js */; };
+		A905B1D81860325A007B1D5F /* StarredNewsUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A905B1D71860325A007B1D5F /* StarredNewsUIViewController.m */; };
+		A905B1DB1860329C007B1D5F /* starredNews.html in Resources */ = {isa = PBXBuildFile; fileRef = A905B1D91860329C007B1D5F /* starredNews.html */; };
+		A905B1DD18603684007B1D5F /* starredNews.js in Resources */ = {isa = PBXBuildFile; fileRef = A905B1DA1860329C007B1D5F /* starredNews.js */; };
+		A905B1E0186037A9007B1D5F /* DeletedNewsUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A905B1DF186037A9007B1D5F /* DeletedNewsUIViewController.m */; };
+		A905B1E71860399D007B1D5F /* deletedNews.html in Resources */ = {isa = PBXBuildFile; fileRef = A905B1E51860399D007B1D5F /* deletedNews.html */; };
+		A905B1E9186039A6007B1D5F /* deletedNews.js in Resources */ = {isa = PBXBuildFile; fileRef = A905B1E61860399D007B1D5F /* deletedNews.js */; };
 		A9743439185D79AD0083D8C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9743438185D79AD0083D8C4 /* Foundation.framework */; };
 		A974343B185D79AD0083D8C4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A974343A185D79AD0083D8C4 /* CoreGraphics.framework */; };
 		A974343D185D79AD0083D8C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A974343C185D79AD0083D8C4 /* UIKit.framework */; };
@@ -64,6 +70,14 @@
 		A905B1CE186001F6007B1D5F /* star_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star_off.png; path = news4me/web/src/star_off.png; sourceTree = SOURCE_ROOT; };
 		A905B1CF186001F6007B1D5F /* star_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star_on.png; path = news4me/web/src/star_on.png; sourceTree = SOURCE_ROOT; };
 		A905B1D3186030E0007B1D5F /* common.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = common.js; sourceTree = "<group>"; };
+		A905B1D61860325A007B1D5F /* StarredNewsUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarredNewsUIViewController.h; sourceTree = "<group>"; };
+		A905B1D71860325A007B1D5F /* StarredNewsUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarredNewsUIViewController.m; sourceTree = "<group>"; };
+		A905B1D91860329C007B1D5F /* starredNews.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = starredNews.html; sourceTree = "<group>"; };
+		A905B1DA1860329C007B1D5F /* starredNews.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = starredNews.js; sourceTree = "<group>"; };
+		A905B1DE186037A9007B1D5F /* DeletedNewsUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeletedNewsUIViewController.h; sourceTree = "<group>"; };
+		A905B1DF186037A9007B1D5F /* DeletedNewsUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeletedNewsUIViewController.m; sourceTree = "<group>"; };
+		A905B1E51860399D007B1D5F /* deletedNews.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = deletedNews.html; sourceTree = "<group>"; };
+		A905B1E61860399D007B1D5F /* deletedNews.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = deletedNews.js; sourceTree = "<group>"; };
 		A9743435185D79AD0083D8C4 /* news4me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = news4me.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9743438185D79AD0083D8C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A974343A185D79AD0083D8C4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -193,6 +207,10 @@
 				A9B6A093185EB49600DD8943 /* FullArticleWebUIViewController.m */,
 				A9743450185D79AD0083D8C4 /* ReadNewsUIViewController.h */,
 				A9743451185D79AD0083D8C4 /* ReadNewsUIViewController.m */,
+				A905B1D61860325A007B1D5F /* StarredNewsUIViewController.h */,
+				A905B1D71860325A007B1D5F /* StarredNewsUIViewController.m */,
+				A905B1DE186037A9007B1D5F /* DeletedNewsUIViewController.h */,
+				A905B1DF186037A9007B1D5F /* DeletedNewsUIViewController.m */,
 				A9C6C124185E6213000981BF /* WebViewJavascriptBridge */,
 				A9C6C11E185E61E3000981BF /* WebUIViewController.h */,
 				A9C6C11F185E61E3000981BF /* WebUIViewController.m */,
@@ -276,9 +294,13 @@
 				A9C6C137185E7E58000981BF /* recommendedNews.js */,
 				A9B6A0A0185EF54600DD8943 /* readNews.html */,
 				A9B6A0A1185EF54600DD8943 /* readNews.js */,
-				A905B1CD186001F6007B1D5F /* remove.png */,
+				A905B1D91860329C007B1D5F /* starredNews.html */,
+				A905B1DA1860329C007B1D5F /* starredNews.js */,
+				A905B1E51860399D007B1D5F /* deletedNews.html */,
+				A905B1E61860399D007B1D5F /* deletedNews.js */,
 				A905B1CE186001F6007B1D5F /* star_off.png */,
 				A905B1CF186001F6007B1D5F /* star_on.png */,
+				A905B1CD186001F6007B1D5F /* remove.png */,
 			);
 			path = dist;
 			sourceTree = "<group>";
@@ -370,13 +392,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A905B1E9186039A6007B1D5F /* deletedNews.js in Resources */,
+				A905B1DD18603684007B1D5F /* starredNews.js in Resources */,
 				A905B1D5186030EA007B1D5F /* common.js in Resources */,
 				A9B6A0A8185EF5A600DD8943 /* readNews.js in Resources */,
 				A9C6C13A185E7E62000981BF /* recommendedNews.js in Resources */,
 				A905B1D1186001F6007B1D5F /* star_off.png in Resources */,
 				A9C6C11A185E6007000981BF /* rivets.js in Resources */,
 				A9C6C11B185E6008000981BF /* touch.js in Resources */,
+				A905B1E71860399D007B1D5F /* deletedNews.html in Resources */,
 				A9C6C138185E7E58000981BF /* recommendedNews.html in Resources */,
+				A905B1DB1860329C007B1D5F /* starredNews.html in Resources */,
 				A9B6A0A3185EF54600DD8943 /* readNews.html in Resources */,
 				A9C6C11C185E6008000981BF /* zepto.js in Resources */,
 				A9743454185D79AD0083D8C4 /* Images.xcassets in Resources */,
@@ -429,6 +455,8 @@
 				A9B6A09A185ECBD700DD8943 /* NJKWebViewProgress.m in Sources */,
 				A9743474185D8E080083D8C4 /* LandingUIViewController.m in Sources */,
 				A9C6C135185E7866000981BF /* MainUITabBarController.m in Sources */,
+				A905B1E0186037A9007B1D5F /* DeletedNewsUIViewController.m in Sources */,
+				A905B1D81860325A007B1D5F /* StarredNewsUIViewController.m in Sources */,
 				A9B6A09B185ECBD700DD8943 /* NJKWebViewProgressView.m in Sources */,
 				A9743449185D79AD0083D8C4 /* AppDelegate.m in Sources */,
 				A9C6C123185E61E3000981BF /* WebWithRefreshUIViewController.m in Sources */,
