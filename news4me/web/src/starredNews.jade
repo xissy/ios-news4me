@@ -5,7 +5,7 @@ html(lang='ko')
     link(href='pure.css', rel='stylesheet', type='text/css')
     link(href='style.css', rel='stylesheet', type='text/css')
 
-  body#readNewsPage
+  body#starredNewsPage
     #articles(rv-each-article='articles')
       .article(rv-id='article.id | articleId')
         .contentArea(rv-on-tap='article.onTap')
@@ -36,4 +36,4 @@ html(lang='ko')
     script(type='text/javascript', src='touch.js')
     script(type='text/javascript', src='rivets.js')
     script(type='text/javascript', src='common.js')
-    script(type='text/javascript', src='readNews.js')
+    script(type='text/javascript', src='starredNews.js')

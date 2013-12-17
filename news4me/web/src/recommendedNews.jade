@@ -5,22 +5,35 @@ html(lang='ko')
     link(href='pure.css', rel='stylesheet', type='text/css')
     link(href='style.css', rel='stylesheet', type='text/css')
 
-  body#recommendedNewsPage
-    #articles(rv-each-article='articles', rv-on-tap='article.onTap')
-      .article
-        .id { article.id }
-        h1.title { article.title }
-        .meta
-          .site { article.siteTitle }
-          .pubDate { article.pubDateString }
-        .imageBox
-          img(rv-src='article.imageUrl', rv-show='article.hasImage')
-        ul.summarizedSentences(rv-each-sentence='article.summarizedSentences')
-          li.sentence { sentence }
-        p.relatedKeywords 왜? { article.relatedKeywords }
+  body#readNewsPage
+    #articles(rv-each-article='articles')
+      .article(rv-id='article.id | articleId')
+        .contentArea(rv-on-tap='article.onTap')
+          .id { article.id }
+          h1.title { article.title }
+          .meta
+            .site { article.siteTitle }
+            .pubDate { article.pubDateString }
+          .imageBox
+            img(rv-src='article.imageUrl', rv-show='article.hasImage')
+          ul.summarizedSentences(rv-each-sentence='article.summarizedSentences')
+            li.sentence { sentence }
+          p.relatedKeywords 왜? { article.relatedKeywords }
+        .buttonArea
+          span.starOnButton.bottumButton(rv-show='article.isNotStarred', rv-on-tap='article.onTapStarOn')
+            img(src='star_off.png')
+            | 별표하기
+          span.starOffButton.bottumButton(rv-show='article.isStarred', rv-on-tap='article.onTapStarOff')
+            img(src='star_on.png')
+            | 별표취소
+          span.removeButton.bottumButton(rv-on-tap='article.onTapRemove')
+            img(src='remove.png')
+            |  삭제하기
+
+    .loading
 
     script(type='text/javascript', src='zepto.js')
     script(type='text/javascript', src='touch.js')
     script(type='text/javascript', src='rivets.js')
-    script(type='text/javascript', src='config.js')
+    script(type='text/javascript', src='common.js')
     script(type='text/javascript', src='recommendedNews.js')

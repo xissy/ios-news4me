@@ -65,4 +65,13 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+- (IBAction)touchShareButton:(UIBarButtonItem *)sender {
+    NSArray* dataToShare = @[self.title, self.webViewUrl];
+    
+    UIActivityViewController* activityViewController =
+    [[UIActivityViewController alloc] initWithActivityItems:dataToShare
+                                      applicationActivities:nil];
+    [self presentViewController:activityViewController animated:YES completion:^{}];
+}
+
 @end

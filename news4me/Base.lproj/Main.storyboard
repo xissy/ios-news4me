@@ -71,6 +71,11 @@
                                 <action selector="touchExitButton:" destination="zmz-ps-KN6" id="vnI-Up-9vx"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="Ie2-qJ-U1z">
+                            <connections>
+                                <action selector="touchShareButton:" destination="zmz-ps-KN6" id="W8k-Zc-fuq"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="activityIndicator" destination="tS0-2u-xjc" id="lrs-0a-qPp"/>

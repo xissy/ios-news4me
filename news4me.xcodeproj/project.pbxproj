@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A905B1D0186001F6007B1D5F /* remove.png in Resources */ = {isa = PBXBuildFile; fileRef = A905B1CD186001F6007B1D5F /* remove.png */; };
+		A905B1D1186001F6007B1D5F /* star_off.png in Resources */ = {isa = PBXBuildFile; fileRef = A905B1CE186001F6007B1D5F /* star_off.png */; };
+		A905B1D2186001F6007B1D5F /* star_on.png in Resources */ = {isa = PBXBuildFile; fileRef = A905B1CF186001F6007B1D5F /* star_on.png */; };
+		A905B1D5186030EA007B1D5F /* common.js in Resources */ = {isa = PBXBuildFile; fileRef = A905B1D3186030E0007B1D5F /* common.js */; };
 		A9743439185D79AD0083D8C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9743438185D79AD0083D8C4 /* Foundation.framework */; };
 		A974343B185D79AD0083D8C4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A974343A185D79AD0083D8C4 /* CoreGraphics.framework */; };
 		A974343D185D79AD0083D8C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A974343C185D79AD0083D8C4 /* UIKit.framework */; };
@@ -29,7 +33,6 @@
 		A9B6A09B185ECBD700DD8943 /* NJKWebViewProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B6A099185ECBD700DD8943 /* NJKWebViewProgressView.m */; };
 		A9B6A09E185EF09A00DD8943 /* NewsUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B6A09D185EF09A00DD8943 /* NewsUIViewController.m */; };
 		A9B6A0A3185EF54600DD8943 /* readNews.html in Resources */ = {isa = PBXBuildFile; fileRef = A9B6A0A0185EF54600DD8943 /* readNews.html */; };
-		A9B6A0A7185EF5A600DD8943 /* config.js in Resources */ = {isa = PBXBuildFile; fileRef = A9B6A0A5185EF58800DD8943 /* config.js */; };
 		A9B6A0A8185EF5A600DD8943 /* readNews.js in Resources */ = {isa = PBXBuildFile; fileRef = A9B6A0A1185EF54600DD8943 /* readNews.js */; };
 		A9C6AB2E185E5A19000981BF /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C6AB2D185E5A19000981BF /* FacebookSDK.framework */; };
 		A9C6C115185E5FE8000981BF /* pure.css in Resources */ = {isa = PBXBuildFile; fileRef = A9C6C110185E5FE8000981BF /* pure.css */; };
@@ -57,6 +60,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A905B1CD186001F6007B1D5F /* remove.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = remove.png; path = news4me/web/src/remove.png; sourceTree = SOURCE_ROOT; };
+		A905B1CE186001F6007B1D5F /* star_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star_off.png; path = news4me/web/src/star_off.png; sourceTree = SOURCE_ROOT; };
+		A905B1CF186001F6007B1D5F /* star_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star_on.png; path = news4me/web/src/star_on.png; sourceTree = SOURCE_ROOT; };
+		A905B1D3186030E0007B1D5F /* common.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = common.js; sourceTree = "<group>"; };
 		A9743435185D79AD0083D8C4 /* news4me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = news4me.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9743438185D79AD0083D8C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A974343A185D79AD0083D8C4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -91,7 +98,6 @@
 		A9B6A09D185EF09A00DD8943 /* NewsUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsUIViewController.m; sourceTree = "<group>"; };
 		A9B6A0A0185EF54600DD8943 /* readNews.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = readNews.html; sourceTree = "<group>"; };
 		A9B6A0A1185EF54600DD8943 /* readNews.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = readNews.js; sourceTree = "<group>"; };
-		A9B6A0A5185EF58800DD8943 /* config.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = config.js; sourceTree = "<group>"; };
 		A9C6AB2D185E5A19000981BF /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		A9C6C110185E5FE8000981BF /* pure.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = pure.css; sourceTree = "<group>"; };
 		A9C6C111185E5FE8000981BF /* rivets.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = rivets.js; sourceTree = "<group>"; };
@@ -265,11 +271,14 @@
 				A9C6C112185E5FE8000981BF /* style.css */,
 				A9C6C113185E5FE8000981BF /* touch.js */,
 				A9C6C114185E5FE8000981BF /* zepto.js */,
-				A9B6A0A5185EF58800DD8943 /* config.js */,
+				A905B1D3186030E0007B1D5F /* common.js */,
 				A9C6C136185E7E58000981BF /* recommendedNews.html */,
 				A9C6C137185E7E58000981BF /* recommendedNews.js */,
 				A9B6A0A0185EF54600DD8943 /* readNews.html */,
 				A9B6A0A1185EF54600DD8943 /* readNews.js */,
+				A905B1CD186001F6007B1D5F /* remove.png */,
+				A905B1CE186001F6007B1D5F /* star_off.png */,
+				A905B1CF186001F6007B1D5F /* star_on.png */,
 			);
 			path = dist;
 			sourceTree = "<group>";
@@ -361,18 +370,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9B6A0A7185EF5A600DD8943 /* config.js in Resources */,
+				A905B1D5186030EA007B1D5F /* common.js in Resources */,
 				A9B6A0A8185EF5A600DD8943 /* readNews.js in Resources */,
 				A9C6C13A185E7E62000981BF /* recommendedNews.js in Resources */,
+				A905B1D1186001F6007B1D5F /* star_off.png in Resources */,
 				A9C6C11A185E6007000981BF /* rivets.js in Resources */,
 				A9C6C11B185E6008000981BF /* touch.js in Resources */,
 				A9C6C138185E7E58000981BF /* recommendedNews.html in Resources */,
 				A9B6A0A3185EF54600DD8943 /* readNews.html in Resources */,
 				A9C6C11C185E6008000981BF /* zepto.js in Resources */,
 				A9743454185D79AD0083D8C4 /* Images.xcassets in Resources */,
+				A905B1D0186001F6007B1D5F /* remove.png in Resources */,
 				A9743443185D79AD0083D8C4 /* InfoPlist.strings in Resources */,
 				A9C6C128185E6213000981BF /* WebViewJavascriptBridge.js.txt in Resources */,
 				A9C6C117185E5FE8000981BF /* style.css in Resources */,
+				A905B1D2186001F6007B1D5F /* star_on.png in Resources */,
 				A974344C185D79AD0083D8C4 /* Main.storyboard in Resources */,
 				A9C6C115185E5FE8000981BF /* pure.css in Resources */,
 			);
