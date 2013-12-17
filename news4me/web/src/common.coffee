@@ -27,7 +27,8 @@ $(document).on 'ajaxSuccess', (xhr, options, data) ->
   # alert 'ajaxSuccess'
 
 $(document).on 'ajaxError', (xhr, options, error) ->
-  alert 'ajaxError'
+  bridge.send 'ajaxError'
+  alert '네트워크 연결에 실패했습니다. 다시 시도해 주세요.'
 
 
 loadArticles = (apiUrl, bridge, callback) ->
@@ -35,7 +36,7 @@ loadArticles = (apiUrl, bridge, callback) ->
     for article in currentArticles
       do (article) ->
         articleId = article.id
-        
+
         article.onTap = (e) ->
           bridge.send
             message: 'onTapArticle'

@@ -57,6 +57,10 @@
             
         } else if ([message isEqualToString:@"onTap"]) {
             [self performSegueWithIdentifier:@"SegueToFullArticleWebUIViewController" sender:self];
+            
+        } else if ([message isEqualToString:@"ajaxError"]) {
+            self.isLoading = NO;
+            [self.activityIndicator stopAnimating];
         }
     } else {
         NSString *message = data[@"message"];
@@ -81,6 +85,13 @@
     self.isLoading = YES;
     [self.activityIndicator startAnimating];
     [self.bridge send:@"loadMore"];
+}
+
+- (void)handleRefresh:(UIRefreshControl *)refresh {
+    self.isLoading = YES;
+    [self.activityIndicator startAnimating];
+    [self.bridge send:@"refresh"];
+    [refresh endRefreshing];
 }
 
 @end

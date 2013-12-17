@@ -10,6 +10,12 @@ connectWebViewJavascriptBridge (currentBridge) ->
     if message is 'loadMore'
       apiUrl = "#{baseUrl}/news/facebook/#{userId}?accessToken=#{accessToken}"
       loadArticles apiUrl, bridge
+    
+    if message is 'refresh'
+      while articles.length > 0
+        articles.pop()
+      apiUrl = "#{baseUrl}/news/facebook/#{userId}?accessToken=#{accessToken}"
+      loadArticles apiUrl, bridge
 
   bridge.send 'init', (result) ->
     userId = result.userId
