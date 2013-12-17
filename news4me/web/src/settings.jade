@@ -1,0 +1,17 @@
+doctype 5
+html(lang='ko')
+  head
+    meta(charset='utf-8')
+    link(href='pure.css', rel='stylesheet', type='text/css')
+    link(href='style.css', rel='stylesheet', type='text/css')
+
+  body#settingsPage
+    #profile
+      .logout(rv-on-tap='profile.logout')
+        img(rv-src='profile.imageUrl')
+        .userName { profile.userName } Logout
+
+    script(type='text/javascript', src='zepto.js')
+    script(type='text/javascript', src='touch.js')
+    script(type='text/javascript', src='rivets.js')
+    script(type='text/javascript', src='settings.js')

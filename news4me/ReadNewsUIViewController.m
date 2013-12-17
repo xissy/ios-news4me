@@ -20,8 +20,6 @@
 {
     [super viewDidLoad];
     
-    NSLog(@"ReadNewsUIViewController");
-    
     self.webViewUrl = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"readNews" ofType:@"html"]isDirectory:NO];
     [self.webView loadRequest:[NSURLRequest requestWithURL:self.webViewUrl]];
 }

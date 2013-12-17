@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sYx-BJ-XYZ">
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sYx-BJ-XYZ">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -28,8 +28,14 @@
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="sYx-BJ-XYZ" secondAttribute="bottom" id="7tN-Dp-lJM"/>
+                            <constraint firstItem="sYx-BJ-XYZ" firstAttribute="leading" secondItem="2VE-Yg-loa" secondAttribute="leading" id="OEO-J8-amw"/>
+                            <constraint firstItem="sYx-BJ-XYZ" firstAttribute="top" secondItem="2VE-Yg-loa" secondAttribute="top" id="dLj-k7-XWf"/>
+                            <constraint firstAttribute="trailing" secondItem="sYx-BJ-XYZ" secondAttribute="trailing" id="e7a-40-ccL"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="오늘의 추천 뉴스" id="MMz-Ob-byV"/>
+                    <navigationItem key="navigationItem" title="News4me" id="MMz-Ob-byV"/>
                     <connections>
                         <outlet property="activityIndicator" destination="76a-CD-W5e" id="HKB-8W-eDT"/>
                         <outlet property="webView" destination="sYx-BJ-XYZ" id="gYN-Lf-6ak"/>
@@ -98,7 +104,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gnz-2b-cxU">
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gnz-2b-cxU">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -110,8 +116,14 @@
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="gnz-2b-cxU" secondAttribute="trailing" id="ER2-ZG-Fdz"/>
+                            <constraint firstAttribute="bottom" secondItem="gnz-2b-cxU" secondAttribute="bottom" id="fLC-O9-maW"/>
+                            <constraint firstItem="gnz-2b-cxU" firstAttribute="leading" secondItem="MYP-ol-Pvh" secondAttribute="leading" id="g7q-jP-jpM"/>
+                            <constraint firstItem="gnz-2b-cxU" firstAttribute="top" secondItem="MYP-ol-Pvh" secondAttribute="top" id="ysE-sA-FMJ"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="삭제한 뉴스" id="8mn-39-YrT"/>
+                    <navigationItem key="navigationItem" title="Deleted" id="8mn-39-YrT"/>
                     <connections>
                         <outlet property="activityIndicator" destination="cjv-ud-OSc" id="fwU-B3-VKK"/>
                         <outlet property="webView" destination="gnz-2b-cxU" id="95g-ra-poS"/>
@@ -121,59 +133,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vAO-dp-5vd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1081" y="1888"/>
-        </scene>
-        <!--Table View Controller - More-->
-        <scene sceneID="GKU-Wq-Q8n">
-            <objects>
-                <tableViewController id="zly-xf-6L3" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="i9i-ZG-Gas">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="laB-8E-Wz3" detailTextLabel="DAz-Jb-8dR" style="IBUITableViewCellStyleValue2" id="Osx-9g-qJJ">
-                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Osx-9g-qJJ" id="qtn-cZ-9WN">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="laB-8E-Wz3">
-                                            <rect key="frame" x="15" y="13" width="91" height="17"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <color key="textColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Detail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DAz-Jb-8dR">
-                                            <rect key="frame" x="112" y="13" width="37" height="17"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="AwP-Fw-Boh">
-                                <rect key="frame" x="0.0" y="130" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AwP-Fw-Boh" id="we8-wh-924">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="zly-xf-6L3" id="IXb-DJ-RxZ"/>
-                            <outlet property="delegate" destination="zly-xf-6L3" id="biR-2S-y5z"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="More" id="zOC-zI-n9J"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YEO-N8-Gfg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1081" y="2571"/>
         </scene>
         <!--Read News View Controller-->
         <scene sceneID="ot8-2e-RuS">
@@ -187,7 +146,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nZ9-0o-dV2">
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nZ9-0o-dV2">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -199,8 +158,14 @@
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="nZ9-0o-dV2" secondAttribute="bottom" id="G7e-E0-8tr"/>
+                            <constraint firstItem="nZ9-0o-dV2" firstAttribute="top" secondItem="gMD-aP-Fq6" secondAttribute="top" id="jk6-j5-rce"/>
+                            <constraint firstItem="nZ9-0o-dV2" firstAttribute="leading" secondItem="gMD-aP-Fq6" secondAttribute="leading" id="oOk-hR-79q"/>
+                            <constraint firstAttribute="trailing" secondItem="nZ9-0o-dV2" secondAttribute="trailing" id="uXb-sL-QBm"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="읽은 뉴스" id="cQn-QP-T8o"/>
+                    <navigationItem key="navigationItem" title="Read" id="cQn-QP-T8o"/>
                     <connections>
                         <outlet property="activityIndicator" destination="Tkb-lF-zkB" id="7b4-nw-Lac"/>
                         <outlet property="webView" destination="nZ9-0o-dV2" id="cEF-xf-FLN"/>
@@ -224,7 +189,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vaX-Dt-7do" customClass="FBLoginView">
-                                <rect key="frame" x="60" y="498" width="200" height="50"/>
+                                <rect key="frame" x="60" y="468" width="200" height="50"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <constraints>
@@ -232,10 +197,23 @@
                                     <constraint firstAttribute="width" constant="200" id="hDW-WF-U3R"/>
                                 </constraints>
                             </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="News4me" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xcY-fQ-bj9">
+                                <rect key="frame" x="60" y="83" width="200" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.27450980392156865" green="0.27450980392156865" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Meet your personalized Korean news." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W9Y-UE-8tn">
+                                <rect key="frame" x="39" y="133" width="243" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="vaX-Dt-7do" secondAttribute="bottom" constant="20" id="M3e-IE-8uU"/>
+                            <constraint firstAttribute="bottom" secondItem="vaX-Dt-7do" secondAttribute="bottom" constant="50" id="M3e-IE-8uU"/>
                             <constraint firstAttribute="centerX" secondItem="vaX-Dt-7do" secondAttribute="centerX" id="avw-7o-b7s"/>
                         </constraints>
                     </view>
@@ -271,11 +249,11 @@
             </objects>
             <point key="canvasLocation" x="132" y="180"/>
         </scene>
-        <!--Navigation Controller - 오늘의 추천 뉴스-->
+        <!--Navigation Controller - News4me-->
         <scene sceneID="nDx-c3-ObW">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rcp-LW-NXn" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="오늘의 추천 뉴스" image="infinite" id="u1e-5L-l1D"/>
+                    <tabBarItem key="tabBarItem" title="News4me" image="infinite" id="u1e-5L-l1D"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3iF-zp-rjP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -306,12 +284,53 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="zly-xf-6L3" kind="relationship" relationship="rootViewController" id="hg2-MI-84W"/>
+                        <segue destination="eP9-WI-Npz" kind="relationship" relationship="rootViewController" id="reg-wQ-XHd"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BTw-WI-Wto" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="653" y="2571"/>
+        </scene>
+        <!--SettingsUI View Controller - More-->
+        <scene sceneID="AEI-8R-2dC">
+            <objects>
+                <viewController id="eP9-WI-Npz" customClass="SettingsUIViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Zc-Pt-AOG"/>
+                        <viewControllerLayoutGuide type="bottom" id="PFQ-YN-paC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ehs-aN-W7Y">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lPu-Ph-pvG">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="349-b5-VOv">
+                                <rect key="frame" x="150" y="274" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lPu-Ph-pvG" firstAttribute="top" secondItem="Ehs-aN-W7Y" secondAttribute="top" id="FVH-5W-aE0"/>
+                            <constraint firstItem="lPu-Ph-pvG" firstAttribute="leading" secondItem="Ehs-aN-W7Y" secondAttribute="leading" id="PUw-XB-aS7"/>
+                            <constraint firstAttribute="bottom" secondItem="lPu-Ph-pvG" secondAttribute="bottom" id="W7X-BX-Rf1"/>
+                            <constraint firstAttribute="trailing" secondItem="lPu-Ph-pvG" secondAttribute="trailing" id="lkA-Dx-xwb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="More" id="tTV-fk-MSn"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="349-b5-VOv" id="8vj-r3-tI4"/>
+                        <outlet property="webView" destination="lPu-Ph-pvG" id="I4H-cL-3W2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DFw-nJ-gWp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1081" y="2571"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="l62-t0-Bx8">
@@ -335,11 +354,11 @@
             </objects>
             <point key="canvasLocation" x="1626" y="334"/>
         </scene>
-        <!--Navigation Controller - 읽은 뉴스-->
+        <!--Navigation Controller - Read-->
         <scene sceneID="NQp-ox-Asg">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rtu-Q2-0YQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="읽은 뉴스" image="eye" id="Z7h-1E-pvt"/>
+                    <tabBarItem key="tabBarItem" title="Read" image="eye" id="Z7h-1E-pvt"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vvl-Jy-L2m">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -354,11 +373,11 @@
             </objects>
             <point key="canvasLocation" x="653" y="538"/>
         </scene>
-        <!--Navigation Controller - 별표한 뉴스-->
+        <!--Navigation Controller - Starred-->
         <scene sceneID="OqC-Rg-coa">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DZE-ph-4M7" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="별표한 뉴스" image="star" id="I15-iQ-Rt8"/>
+                    <tabBarItem key="tabBarItem" title="Starred" image="star" id="I15-iQ-Rt8"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="86M-UF-0Fv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -373,7 +392,7 @@
             </objects>
             <point key="canvasLocation" x="653" y="1214"/>
         </scene>
-        <!--Starred NewsUI View Controller - 별표한 뉴스-->
+        <!--Starred NewsUI View Controller - Starred-->
         <scene sceneID="nDL-U7-Zw6">
             <objects>
                 <viewController id="3yG-VI-kqD" customClass="StarredNewsUIViewController" sceneMemberID="viewController">
@@ -385,7 +404,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UIW-ca-mj9">
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UIW-ca-mj9">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -397,8 +416,14 @@
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UIW-ca-mj9" firstAttribute="top" secondItem="ocI-lI-s7J" secondAttribute="top" id="BAH-N3-Xz8"/>
+                            <constraint firstAttribute="bottom" secondItem="UIW-ca-mj9" secondAttribute="bottom" id="bla-dL-o3o"/>
+                            <constraint firstAttribute="trailing" secondItem="UIW-ca-mj9" secondAttribute="trailing" id="grC-Mg-mRd"/>
+                            <constraint firstItem="UIW-ca-mj9" firstAttribute="leading" secondItem="ocI-lI-s7J" secondAttribute="leading" id="tjp-d1-UI5"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="별표한 뉴스" id="Anp-2r-JaP"/>
+                    <navigationItem key="navigationItem" title="Starred" id="Anp-2r-JaP"/>
                     <connections>
                         <outlet property="activityIndicator" destination="eTe-b4-10U" id="7O6-AU-vem"/>
                         <outlet property="webView" destination="UIW-ca-mj9" id="Wg8-sH-0YW"/>
@@ -409,11 +434,11 @@
             </objects>
             <point key="canvasLocation" x="1081" y="1214"/>
         </scene>
-        <!--Navigation Controller - 삭제한 뉴스-->
+        <!--Navigation Controller - Deleted-->
         <scene sceneID="9lM-PM-J5U">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iiR-GJ-JqQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="삭제한 뉴스" image="tag" id="fUF-CV-9K0"/>
+                    <tabBarItem key="tabBarItem" title="Deleted" image="tag" id="fUF-CV-9K0"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="V4w-5d-Q77">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -441,6 +466,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="D4w-cR-9Vk"/>
+        <segue reference="bq7-lH-fnG"/>
     </inferredMetricsTieBreakers>
 </document>

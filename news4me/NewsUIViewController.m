@@ -28,10 +28,7 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    NSLog(@"prepareForSegue");
-    
     if ([segue.identifier isEqualToString:@"SegueToFullArticleWebUIViewController"]) {
-        NSLog(@"SegueToFullArticleWebUIViewController");
         UINavigationController *navController = (UINavigationController *)segue.destinationViewController;
         FullArticleWebUIViewController *fullArticleWebUIViewController = (FullArticleWebUIViewController *)navController.topViewController;
         fullArticleWebUIViewController.webViewUrl = [NSURL URLWithString:self.tappedArticleUrl];
