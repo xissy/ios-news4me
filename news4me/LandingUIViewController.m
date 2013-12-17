@@ -52,12 +52,10 @@
 
 // Logged-in user experience
 - (void)loginViewShowingLoggedInUser:(FBLoginView *)loginView {
-    NSLog(@"You're logged in as");
 }
 
 // Logged-out user experience
 - (void)loginViewShowingLoggedOutUser:(FBLoginView *)loginView {
-    NSLog(@"You're not logged in!");
 }
 
 // Handle possible errors that can occur during login

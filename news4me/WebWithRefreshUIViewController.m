@@ -33,7 +33,6 @@
 }
 
 - (void)handleRefresh:(UIRefreshControl *)refresh {
-    NSLog(@"handleRefresh");
     [refresh endRefreshing];
 }
 

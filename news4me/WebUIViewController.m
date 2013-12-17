@@ -68,22 +68,18 @@
 
 - (void)handleWebViewJavascriptBridge:(id)data callback:(WVJBResponseCallback)responseCallback
 {
-    NSLog(@"handleWebViewJavascriptBridge");
 }
 
 - (void)handleReachingBottom {
-    NSLog(@"handleReachingBottom");
 }
 
 #pragma mark - UIWebViewDelegate
 - (void)webViewDidStartLoad:(UIWebView *)webView
 {
-    NSLog(@"webViewDidStartLoad");
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
-    NSLog(@"webViewDidFinishLoad");
 	[self.activityIndicator stopAnimating];
 }
 
