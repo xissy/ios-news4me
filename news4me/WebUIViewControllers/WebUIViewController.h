@@ -13,7 +13,7 @@
 
 @property (retain, nonatomic) NSURL* webViewUrl;
 @property (retain, nonatomic) IBOutlet UIWebView *webView;
-@property (retain, nonatomic) WebViewJavascriptBridge* bridge;
+@property (retain, nonatomic) WebViewJavascriptBridge *bridge;
 @property (retain, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
     
 @end
