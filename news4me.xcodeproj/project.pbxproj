@@ -27,17 +27,12 @@
 		A905B20F1860589E007B1D5F /* RecommendedNewsUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A905B2061860589E007B1D5F /* RecommendedNewsUIViewController.m */; };
 		A905B2101860589E007B1D5F /* SettingsUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A905B2081860589E007B1D5F /* SettingsUIViewController.m */; };
 		A905B2111860589E007B1D5F /* StarredNewsUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A905B20A1860589E007B1D5F /* StarredNewsUIViewController.m */; };
-		A9743439185D79AD0083D8C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9743438185D79AD0083D8C4 /* Foundation.framework */; };
-		A974343B185D79AD0083D8C4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A974343A185D79AD0083D8C4 /* CoreGraphics.framework */; };
-		A974343D185D79AD0083D8C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A974343C185D79AD0083D8C4 /* UIKit.framework */; };
+		A933501919394A3F0079C80B /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A933501819394A3F0079C80B /* FacebookSDK.framework */; };
 		A9743443185D79AD0083D8C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9743441185D79AD0083D8C4 /* InfoPlist.strings */; };
 		A9743445185D79AD0083D8C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9743444185D79AD0083D8C4 /* main.m */; };
 		A9743449185D79AD0083D8C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9743448185D79AD0083D8C4 /* AppDelegate.m */; };
 		A974344C185D79AD0083D8C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A974344A185D79AD0083D8C4 /* Main.storyboard */; };
 		A9743454185D79AD0083D8C4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9743453185D79AD0083D8C4 /* Images.xcassets */; };
-		A974345B185D79AD0083D8C4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A974345A185D79AD0083D8C4 /* XCTest.framework */; };
-		A974345C185D79AD0083D8C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9743438185D79AD0083D8C4 /* Foundation.framework */; };
-		A974345D185D79AD0083D8C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A974343C185D79AD0083D8C4 /* UIKit.framework */; };
 		A9743465185D79AD0083D8C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9743463185D79AD0083D8C4 /* InfoPlist.strings */; };
 		A9743467185D79AD0083D8C4 /* news4meTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9743466185D79AD0083D8C4 /* news4meTests.m */; };
 		A9B6A091185E89B500DD8943 /* UserPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B6A090185E89B500DD8943 /* UserPreferences.m */; };
@@ -45,7 +40,6 @@
 		A9B6A09B185ECBD700DD8943 /* NJKWebViewProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B6A099185ECBD700DD8943 /* NJKWebViewProgressView.m */; };
 		A9B6A0A3185EF54600DD8943 /* readNews.html in Resources */ = {isa = PBXBuildFile; fileRef = A9B6A0A0185EF54600DD8943 /* readNews.html */; };
 		A9B6A0A8185EF5A600DD8943 /* readNews.js in Resources */ = {isa = PBXBuildFile; fileRef = A9B6A0A1185EF54600DD8943 /* readNews.js */; };
-		A9C6AB2E185E5A19000981BF /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C6AB2D185E5A19000981BF /* FacebookSDK.framework */; };
 		A9C6C115185E5FE8000981BF /* pure.css in Resources */ = {isa = PBXBuildFile; fileRef = A9C6C110185E5FE8000981BF /* pure.css */; };
 		A9C6C117185E5FE8000981BF /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = A9C6C112185E5FE8000981BF /* style.css */; };
 		A9C6C11A185E6007000981BF /* rivets.js in Resources */ = {isa = PBXBuildFile; fileRef = A9C6C111185E5FE8000981BF /* rivets.js */; };
@@ -99,10 +93,8 @@
 		A905B2081860589E007B1D5F /* SettingsUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsUIViewController.m; sourceTree = "<group>"; };
 		A905B2091860589E007B1D5F /* StarredNewsUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarredNewsUIViewController.h; sourceTree = "<group>"; };
 		A905B20A1860589E007B1D5F /* StarredNewsUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarredNewsUIViewController.m; sourceTree = "<group>"; };
+		A933501819394A3F0079C80B /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		A9743435185D79AD0083D8C4 /* news4me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = news4me.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A9743438185D79AD0083D8C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		A974343A185D79AD0083D8C4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		A974343C185D79AD0083D8C4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A9743442185D79AD0083D8C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A9743444185D79AD0083D8C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A9743446185D79AD0083D8C4 /* news4me-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "news4me-Prefix.pch"; sourceTree = "<group>"; };
@@ -111,7 +103,6 @@
 		A974344B185D79AD0083D8C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A9743453185D79AD0083D8C4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A9743459185D79AD0083D8C4 /* news4meTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = news4meTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A974345A185D79AD0083D8C4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		A9743462185D79AD0083D8C4 /* news4meTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "news4meTests-Info.plist"; sourceTree = "<group>"; };
 		A9743464185D79AD0083D8C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A9743466185D79AD0083D8C4 /* news4meTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = news4meTests.m; sourceTree = "<group>"; };
@@ -123,7 +114,6 @@
 		A9B6A099185ECBD700DD8943 /* NJKWebViewProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJKWebViewProgressView.m; sourceTree = "<group>"; };
 		A9B6A0A0185EF54600DD8943 /* readNews.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = readNews.html; sourceTree = "<group>"; };
 		A9B6A0A1185EF54600DD8943 /* readNews.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = readNews.js; sourceTree = "<group>"; };
-		A9C6AB2D185E5A19000981BF /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		A9C6C110185E5FE8000981BF /* pure.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = pure.css; sourceTree = "<group>"; };
 		A9C6C111185E5FE8000981BF /* rivets.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = rivets.js; sourceTree = "<group>"; };
 		A9C6C112185E5FE8000981BF /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
@@ -144,10 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A974343B185D79AD0083D8C4 /* CoreGraphics.framework in Frameworks */,
-				A9C6AB2E185E5A19000981BF /* FacebookSDK.framework in Frameworks */,
-				A974343D185D79AD0083D8C4 /* UIKit.framework in Frameworks */,
-				A9743439185D79AD0083D8C4 /* Foundation.framework in Frameworks */,
+				A933501919394A3F0079C80B /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,9 +142,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A974345B185D79AD0083D8C4 /* XCTest.framework in Frameworks */,
-				A974345D185D79AD0083D8C4 /* UIKit.framework in Frameworks */,
-				A974345C185D79AD0083D8C4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,11 +204,7 @@
 		A9743437185D79AD0083D8C4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A9C6AB2D185E5A19000981BF /* FacebookSDK.framework */,
-				A9743438185D79AD0083D8C4 /* Foundation.framework */,
-				A974343A185D79AD0083D8C4 /* CoreGraphics.framework */,
-				A974343C185D79AD0083D8C4 /* UIKit.framework */,
-				A974345A185D79AD0083D8C4 /* XCTest.framework */,
+				A933501819394A3F0079C80B /* FacebookSDK.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -387,7 +367,7 @@
 		A974342D185D79AD0083D8C4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Recomio, Inc.";
 				TargetAttributes = {
 					A9743458185D79AD0083D8C4 = {
@@ -546,7 +526,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -578,6 +557,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -585,7 +565,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -609,8 +588,10 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;
 		};
@@ -623,10 +604,16 @@
 					"$(inherited)",
 					"/Users/xissysnd/recom.io/ios-news4me/news4me",
 					"/Users/xissysnd/recom.io/ios-news4me",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "news4me/news4me-Prefix.pch";
 				INFOPLIST_FILE = "news4me/news4me-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/news4me",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -641,10 +628,16 @@
 					"$(inherited)",
 					"/Users/xissysnd/recom.io/ios-news4me/news4me",
 					"/Users/xissysnd/recom.io/ios-news4me",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "news4me/news4me-Prefix.pch";
 				INFOPLIST_FILE = "news4me/news4me-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/news4me",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -653,7 +646,6 @@
 		A974346E185D79AD0083D8C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/news4me.app/news4me";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -676,7 +668,6 @@
 		A974346F185D79AD0083D8C4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/news4me.app/news4me";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
